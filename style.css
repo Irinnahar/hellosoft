@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    background: black;
+    /*position: fixed;*/
+    padding: 10px 0;
+    width: 100%;
+}
+.header .flex-container { flex-direction: row; }
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: auto;
+}
+.logo {width: 50%;}
+.logo img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.header-menu {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.header-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+}
+.header-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #FB6733;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease; 
+}
+.header-menu li:hover{ color: cornsilk }
+.header-menu li:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 42px;
+	background: rgba(251,103,51,0.3);
+	border-radius: 2px;
+	transition: all 1s ease;
+}
+.header-menu li:hover:before { width: 100%;}
+.body-wrap {background: white;}
+/*slider design*/
+div#slider {
+  	overflow: hidden;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 550px;
+}
+div#slider div {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  font-size: 0;
+  animation: 20s slider infinite;
+}
+div#slider div img {
+  width: 20%;
+  float: left;
+}
+@keyframes slider {
+  0% {left: 0%;}
+  20% {left: 0%;}
+  25% {left: -100%;}
+  45% {left: -100%;}
+  50% {left: -200%;}
+  70% {left: -200%;}
+  75% {left: -300%;}
+  95% {left: -300%;}
+}
+/*About us css*/
+.about-wrapper {
+    background: white;
+    text-align: center;
+    padding: 7%;
+}
+.about-wrapper p {
+    color: grey;
+    font-style: italic;
+    line-height: 22px;
+    font-size: 18px;
+    font-family: 'Song Myung', serif;
+}
+h2 {
+    color: #FB6733;
+    font-size: 35px;
+}
+/*technology css*/
+.technology-wrapper {
+    background: #FAFAFA;
+}
+.technology-wrapper {
+    background: #FAFAFA;
+    text-align: center;
+    padding: 5%;
+}
+.technology-wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.technology-wrapper li {
+    width: 135px;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 18px 4px;
+    border-radius: 87px;
+    border: 3px solid #FB6733;
+    margin: 26px 20px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.technology-wrapper img {
+    width: auto;
+    height: 100%;
+}
+/* what we do */
+.wedo-wrapper {
+    background: #F6F6F6;
+    text-align: center;
+    padding: 5%;
+}
+/* clients */
+.client-wrapper {
+    background: #edeaea;
+    text-align: center;
+    padding: 5%;
+}
+.client-wrapper ul {
+    padding: 0;
+}
+.client-wrapper li {
+    display: inline-flex;
+    width: 128px;
+    flex-wrap: wrap;
+    height: 104px;
+    margin: 30px 15px;
+    overflow: hidden;
+    justify-content: center;
+}
+.client-wrapper img {
+    width: auto;
+    height: 100%;
+}
+/* contact form design */
+.contact-form {
+    background: #15181D;
+    padding: 5%;
+}
+.contact-form h2 {
+    color: #a9b0be;
+    text-align: center;
+    margin: 10px 0;
+}
+form {
+    margin: 50px 0;
+}
+input,textarea {
+    margin-bottom: 22px;
+    width: 81%;
+    height: 18px;
+    background: #dbe0ea;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+}
+label {
+    color: #a9b0be;
+    font-size: 17px;
+    float: left;
+    clear: left;
+    width: 15%;
+    margin-top: 9px;
+    padding: 0;
+}
+textarea#query {
+    height: 120px;
+}
+button {
+    background: #FB6733;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    width: 161px;
+    height: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0px 15%;
+}
+/*footer design*/
+.footer {
+    background-color: #111317;
+    padding: 5px 0;
+    text-align: center;
+}
+
+p {
+    color: #ea7e6a;
+    font-size: 12px;
+}
